@@ -14,7 +14,7 @@ function sumValues(num1, num2, add) {
         return result;
     }
     else {
-        return !add;
+        return add;
     }
 }
 
@@ -27,7 +27,7 @@ function sumValues(num1, num2, add) {
 function discountPrices(prices, discount) {
     const discounted = []
     const length = prices.length;
-    
+
     for(let i = 0; i < length; i++) {
         let discountedPrice = prices[i] * (1 - discount);
         discounted.push(discountedPrice);
